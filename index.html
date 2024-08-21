@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="mymodal" id="mymodal">
+        <div class="modal" id="modal">
+          <img
+            class="ok"
+            src="./assets/images/icon-order-confirmed.svg"
+            alt=""
+          />
+          <h1 class="header">Order Confirmed</h1>
+          <p class="greet">We hope you enjoy your food!</p>
+          <section class="mitems" id="mitems">
+            <div class="totalboxes" id="totalboxes"></div>
+            <div class="mtotal">
+              <p class="mordertotal">Order Total</p>
+              <h1 class="mvalue"></h1>
+            </div>
+          </section>
+          <button class="mconfirm">Start New Order</button>
+        </div>
+      </div>
+      <div class="onlygrid">
+        <h1 class="grid-title">Desserts</h1>
+        <div class="gridbox" id="gridbox">
+          <!-- ////////////// DYNAMIC DATA LOADING By DOMContentLoaded ////////////// -->
+        </div>
+      </div>
+      <div class="cart">
+        <h3 class="cart-title">Your Cart (7)</h3>
+        <div class="empty" id="empty">
+          <img
+            class="cakeimg"
+            src="./assets/images/illustration-empty-cart.svg"
+            alt=""
+          />
+          <p class="empty-text">Your added items will appear here</p>
+        </div>
+        <div class="items" id="items">
+          <div class="myitems" id="myitems">
+            <!-- <div class="itemname">
+              <div class="idescription">
+                <h6 class="iname">Classic Toramisu</h6>
+                <div class="mrpbox">
+                  <b class="qty">x3</b>
+                  <p class="price">@ $12.00</p>
+                  <p class="qtyprice">$36.00</p>
+                </div>
+              </div>
+              <div class="remove">
+                <img
+                  class="xx"
+                  src="./assets/images/icon-remove-item.svg"
+                  alt=""
+                />
+              </div>
+            </div> -->
+          </div>
+          <div class="totalprice">
+            <p class="ordertotal">Order Total</p>
+            <h1 class="value">$0.00</h1>
+          </div>
+          <div class="checkout">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="checkout-text">
+              This is a <b>carbon-neutral</b> delivery
+            </p>
+          </div>
+          <button class="confirm">Confirm Order</button>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
